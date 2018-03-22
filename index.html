@@ -10,17 +10,11 @@ published: true
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
       
       <!-- https://elliotekj.com/2016/12/04/jekyll-display-the-full-post-unless-a-custom-excerpt-is-specified/ -->
-      
-		{% if post.content contains site.excerpt_separator %}
-      <div class="entry">
-  			{{ post.excerpt }}
-        </div>
-  			<a href="{{ post.url }}">Read more</a>
-		{% else %}
-      <div class="entry">
-  			{{ post.content }}
-        </div>
-		{% endif %}
+    
+<div class="entry">
+	{{ post.content }}
+</div>
+	
         
 <!--
       <div class="entry">
