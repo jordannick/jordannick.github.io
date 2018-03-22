@@ -14,7 +14,10 @@ published: true
 <div class="entry">
 	{{ post.content }}
 </div>
-	
+	<div class="date">
+    {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
         
 <!--
       <div class="entry">
